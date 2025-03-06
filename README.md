@@ -15,7 +15,7 @@ You are encouraged to further modify this code to suit your needs</b></em>
 For example, courses can be added to both schools and departments, but you 
 may elect to have only the departments keep track of which courses they are
 in charge of.  If you decide to keep track of available courses only within departments,
-you'll need a way to pull up a unique set of courses from all the departments
+you'll need a way to pull up a unique set of courses taught by the school from all the departments
 if multiple departments can teach the same course to avoid the resulting list
 containing duplicate courses.
 
