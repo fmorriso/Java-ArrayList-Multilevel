@@ -3,15 +3,20 @@ import java.util.Collections;
 public class Main {
     public static void main(String[] args) {
 
-        Student s1 = new Student("Brooke", "Aaron", 12);
+        Student s1 = new Student("Mythical", "Last-Name", 12);
         System.out.format("%s\n", s1);
 
         Teacher mgrohman = new Teacher( "Mark", "Grohman");
+        System.out.format("%s\n", mgrohman);
+
+        Course c1 = new Course("Java", "Java Programming");
+        System.out.format("%s\n", c1);
 
         School lphs = new School("Lewis-Palmer","LPHS", "1300 Highby Road", "Monument" );
         System.out.format("%s\n", lphs);
         lphs.addTeacher(mgrohman);
         lphs.addStudent(s1);
+        lphs.addCourse(c1);
 
         School prhs = new School("Palmer Ridge", "PRHS", "19255 Monument Hill Road", "Monument" );
         System.out.format("%s\n", prhs);
@@ -30,7 +35,7 @@ public class Main {
 
         lphs.displayTeachers();
         lphs.displayStudents();
-
+        lphs.displayCourses();
 
         State colorado = new State("Colorado", "CO");
         System.out.format("%s\n", colorado);

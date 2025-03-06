@@ -9,6 +9,7 @@ public class School {
     //
     private List<Teacher> teachers = new ArrayList<Teacher>();
     private List<Student> students = new ArrayList<>();
+    private List<Course> courses = new ArrayList<>();
 
     private School() {/* prevent uninitialized instances */}
 
@@ -40,6 +41,7 @@ public class School {
         teachers.add(teacher);
     }
     public void addStudent(Student student) { students.add(student); }
+    public void addCourse(Course course) { courses.add(course); }
 
     public void displayTeachers() {
         StringBuilder sbr = new StringBuilder();
@@ -57,7 +59,13 @@ public class School {
         System.out.println(sbr.toString());
     }
 
-
+    public void displayCourses() {
+        StringBuilder sbr = new StringBuilder();
+        sbr.append(this).append("\n");
+        for (Course course : courses)
+            sbr.append("\t").append(course).append("\n");
+        System.out.println(sbr.toString());
+    }
 
 
 }
