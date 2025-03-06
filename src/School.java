@@ -1,16 +1,12 @@
-import java.util.ArrayList;
-
-public class District {
+public class School {
     private String name;
     private String abbreviation;
     private String street;
     private String city;
 
-    private ArrayList<School> schools = new ArrayList<School>();
+    private School() {/* prevent uninitialized instances */}
 
-    private District() {/* prevent uninitialized instances */}
-
-    public District(String name, String abbreviation, String street, String city) {
+    public School(String name, String abbreviation, String street, String city) {
         this.name = name;
         this.abbreviation = abbreviation;
         this.street = street;
@@ -22,15 +18,9 @@ public class District {
     public String getStreet() {return street;}
     public String getCity() {return city;}
 
-
-    public void addSchool(School school) {
-        schools.add(school);
-    }
-
-
     @Override
     public String toString() {
-        return new StringBuilder("District{")
+        return new StringBuilder("School{")
                 .append("name='").append(name).append('\'')
                 .append(", abbreviation='").append(abbreviation).append('\'')
                 .append(", street='").append(street).append('\'')

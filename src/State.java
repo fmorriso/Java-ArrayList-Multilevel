@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class State {
 
-
     private String name;
     private String abbreviation;
     private ArrayList<District> schoolDistricts = new ArrayList<District>();
@@ -14,13 +13,8 @@ public class State {
         this.abbreviation = abbreviation;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getAbbreviation() {
-        return abbreviation;
-    }
+    public String getName() { return name; }
+    public String getAbbreviation() { return abbreviation; }
 
     public void addSchoolDistrict(District district) {
         schoolDistricts.add(district);
