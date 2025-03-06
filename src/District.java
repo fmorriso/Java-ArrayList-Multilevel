@@ -40,9 +40,9 @@ public class District {
 
     public void displaySchools() {
         StringBuilder sbr = new StringBuilder();
-        sbr.append("District: ").append(name).append("\n");
+        sbr.append(this).append("\n");
         for (School school : schools)
-                sbr.append("\tSchool: ").append(school.getName()).append("\n");
+                sbr.append("\t").append(school).append("\n");
         System.out.println(sbr.toString());
     }
 }
