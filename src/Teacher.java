@@ -13,9 +13,9 @@ public class Teacher extends Person {
         this.lastName = lastName;
     }
 
-    public String getFirstName() { return firstName; }
-    public String getLastName() { return lastName; }
     public Department getDepartment() { return department; }
+    public void setDepartment(Department department) { this.department = department; }
+
     public List<Course> getCourses() { return courses;}
 
     @Override
@@ -24,5 +24,9 @@ public class Teacher extends Person {
                 .append("lastName='").append(lastName).append('\'')
                 .append(", firstName='").append(lastName).append('\'')
                 .append('}').toString();
+    }
+
+    public void addCourse(Course course) {
+        courses.add(course);
     }
 }
