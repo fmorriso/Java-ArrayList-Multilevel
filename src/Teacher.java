@@ -1,6 +1,5 @@
-public class Teacher {
-    private String firstName;
-    private String lastName;
+public class Teacher extends Person {
+
     // private Department department;
 
     private Teacher() {/* prevent uninitialized instances */}

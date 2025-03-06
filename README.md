@@ -1,10 +1,11 @@
 # Java ArrayList Multilevel
 An example of a multilevel arraylist using a model of:
 * A single State
-* multiple school districts within that state
-* multiple schools within each school district
-* multiple teachers at each school
-* multiple students at each school
+* multiple school districts (District) within that state
+* multiple schools (School) within each school district
+* multiple teachers (Teacher) at each school
+* multiple students (Student) at each school
+* multiple courses (Course) taught at each school
 
 ## Tools Used
 

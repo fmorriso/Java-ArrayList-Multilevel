@@ -3,7 +3,7 @@ import java.util.Collections;
 public class Main {
     public static void main(String[] args) {
 
-        Student s1 = new Student("Brooke", "Aaron");
+        Student s1 = new Student("Brooke", "Aaron", 12);
         System.out.format("%s\n", s1);
 
         Teacher mgrohman = new Teacher( "Mark", "Grohman");
