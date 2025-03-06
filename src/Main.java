@@ -1,3 +1,6 @@
+import java.util.Collections;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         State colorado = new State("Colorado", "CO");
@@ -11,8 +14,11 @@ public class Main {
 
         District lpsd = new District("Lewis-Palmer", "D38", "146 N. Jefferson Street", "Monument");
         System.out.format("%s\n", lpsd);
-        lpsd.addSchool(lphs);
-        lpsd.addSchool(prhs);
+
+        // add a bunch of schools to the district in one call
+        Collections.addAll(lpsd.getSchools(), lphs, prhs);
+//        lpsd.addSchool(lphs);
+//        lpsd.addSchool(prhs);
 
         lpsd.displaySchools();
 

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class District {
     private String name;
@@ -21,6 +22,8 @@ public class District {
     public String getAbbreviation() {return abbreviation;}
     public String getStreet() {return street;}
     public String getCity() {return city;}
+    public List<School> getSchools() { return schools; }
+
 
 
     public void addSchool(School school) {
@@ -45,4 +48,7 @@ public class District {
                 sbr.append("\t").append(school).append("\n");
         System.out.println(sbr.toString());
     }
+
+
+
 }
