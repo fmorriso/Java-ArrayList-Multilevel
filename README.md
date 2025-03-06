@@ -8,6 +8,9 @@ An example of a multilevel arraylist using a model of:
 * multiple students (Student) at each school taking multiple courses
 * multiple courses (Course) taught at each school
 
+NOTE: <em><b>Not every possible scenario is provided in this example.
+You are encouraged to further modify this code to suit your needs</b></em>
+
 ## Tools Used
 
 | Tool     |    Version |
