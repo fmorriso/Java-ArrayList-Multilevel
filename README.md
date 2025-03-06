@@ -18,6 +18,14 @@ in charge of.  If you decide to keep track of available courses only within depa
 you'll need a way to pull up a unique set of courses taught by the school from all the departments
 if multiple departments can teach the same course to avoid the resulting list
 containing duplicate courses.
+</p>
+<p>
+Another issue left up to you is the matter of persistence.
+You may wish to look into Google's GSON as a way of transforming
+Plain Old Java Objects (POJO's) into a form that can be persisted, perhaps
+to a MongoDB Atlas cloud database with collections for each entity (Course, 
+Department, Teacher, Student, School, District and State).
+</p>
 
 ## Tools Used
 
