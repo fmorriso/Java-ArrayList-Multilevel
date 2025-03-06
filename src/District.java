@@ -37,4 +37,12 @@ public class District {
                 .append(", city='").append(city).append('\'')
                 .append('}').toString();
     }
+
+    public void displaySchools() {
+        StringBuilder sbr = new StringBuilder();
+        sbr.append("District: ").append(name).append("\n");
+        for (School school : schools)
+                sbr.append("\tSchool: ").append(school.getName()).append("\n");
+        System.out.println(sbr.toString());
+    }
 }

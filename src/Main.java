@@ -14,6 +14,8 @@ public class Main {
         lpsd.addSchool(lphs);
         lpsd.addSchool(prhs);
 
+        lpsd.displaySchools();
+
         colorado.addSchoolDistrict(lpsd);
 
     }
