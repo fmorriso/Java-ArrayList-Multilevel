@@ -1,8 +1,11 @@
+import java.util.ArrayList;
+
 public class State {
 
 
     private String name;
     private String abbreviation;
+    private ArrayList<District> schoolDistricts = new ArrayList<District>();
 
     private State() {/* prevent uninitialized instances */}
 
@@ -19,12 +22,16 @@ public class State {
         return abbreviation;
     }
 
+    public void addSchoolDistrict(District district) {
+        schoolDistricts.add(district);
+    }
+
     @Override
     public String toString() {
         return new StringBuilder()
                 .append("State{")
-                .append("name='").append(name)
-                .append(", abbreviation='").append(abbreviation)
+                .append("name='").append(name).append('\'')
+                .append(", abbreviation='").append(abbreviation).append('\'')
                 .append('}').toString();
     }
 }

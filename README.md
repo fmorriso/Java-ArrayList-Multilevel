@@ -8,11 +8,11 @@ An example of a multilevel arraylist using a model of:
 
 ## Tools Used
 
-| Tool     |   Version |
-|:---------|----------:|
-| Java     |  23.0.2.0 |
-| IntelliJ |   2024.3.3|
-| VSCode   |    1.98.0 |
+| Tool     |    Version |
+|:---------|-----------:|
+| Java     |   23.0.2.0 |
+| IntelliJ | 2024.3.4.1 |
+| VSCode   |     1.98.0 |
 
 ## Change History
 
