@@ -1,8 +1,13 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class School {
     private String name;
     private String abbreviation;
     private String street;
     private String city;
+    //
+    private List<Teacher> teachers = new ArrayList<Teacher>();
 
     private School() {/* prevent uninitialized instances */}
 
@@ -17,6 +22,7 @@ public class School {
     public String getAbbreviation() {return abbreviation;}
     public String getStreet() {return street;}
     public String getCity() {return city;}
+    public List<Teacher> getTeachers() { return teachers;}
 
     @Override
     public String toString() {
@@ -27,4 +33,18 @@ public class School {
                 .append(", city='").append(city).append('\'')
                 .append('}').toString();
     }
+
+    public void addTeacher(Teacher teacher) {
+        teachers.add(teacher);
+    }
+
+    public void displayTeachers() {
+        StringBuilder sbr = new StringBuilder();
+        sbr.append(this).append("\n");
+        for (Teacher teacher : teachers)
+            sbr.append("\t").append(teacher).append("\n");
+        System.out.println(sbr.toString());
+    }
+
+
 }

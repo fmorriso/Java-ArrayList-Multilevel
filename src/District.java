@@ -49,6 +49,17 @@ public class District {
         System.out.println(sbr.toString());
     }
 
+    public void displaySchoolsAndTeachers(){
+        StringBuilder sbr = new StringBuilder();
+        sbr.append(this).append("\n");
+        for (School school : schools) {
+            sbr.append("\t").append(school).append("\n");
+            for(Teacher teacher: school.getTeachers())
+                sbr.append("\t\t").append(teacher).append("\n");
+        }
+        System.out.println(sbr.toString());
+    }
+
 
 
 }
