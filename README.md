@@ -3,8 +3,9 @@ An example of a multilevel arraylist using a model of:
 * A single State
 * multiple school districts (District) within that state
 * multiple schools (School) within each school district
+* multiple departments (Department) within each school
 * multiple teachers (Teacher) at each school
-* multiple students (Student) at each school
+* multiple students (Student) at each school taking multiple courses
 * multiple courses (Course) taught at each school
 
 ## Tools Used

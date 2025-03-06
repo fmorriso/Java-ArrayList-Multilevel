@@ -1,6 +1,11 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Teacher extends Person {
 
-    // private Department department;
+    private Department department;
+    // courses taught by this teacher
+    private List<Course> courses = new ArrayList<>(); // courses taught
 
     private Teacher() {/* prevent uninitialized instances */}
     public Teacher(String firstName, String lastName) {
@@ -10,6 +15,8 @@ public class Teacher extends Person {
 
     public String getFirstName() { return firstName; }
     public String getLastName() { return lastName; }
+    public Department getDepartment() { return department; }
+    public List<Course> getCourses() { return courses;}
 
     @Override
     public String toString() {

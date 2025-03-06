@@ -4,6 +4,7 @@ import java.util.List;
 public class Student extends Person {
 
     private int gradeLevel;
+    // courses this student is taking
     private List<Course> courses = new ArrayList<Course>();
 
     private Student() {/* prevent uninitialized instances */}

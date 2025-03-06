@@ -3,6 +3,9 @@ import java.util.Collections;
 public class Main {
     public static void main(String[] args) {
 
+        Department d1 = new Department("Computer Science", "Computer Science & Cryptography");
+        System.out.format("%s\n", d1);
+
         Student s1 = new Student("Mythical", "Last-Name", 12);
         System.out.format("%s\n", s1);
 
@@ -17,6 +20,7 @@ public class Main {
         lphs.addTeacher(mgrohman);
         lphs.addStudent(s1);
         lphs.addCourse(c1);
+        lphs.addDepartment(d1);
 
         School prhs = new School("Palmer Ridge", "PRHS", "19255 Monument Hill Road", "Monument" );
         System.out.format("%s\n", prhs);
@@ -33,6 +37,7 @@ public class Main {
         lpsd.displaySchools();
         lpsd.displaySchoolsAndTeachers();
 
+        lphs.displayDepartments();
         lphs.displayTeachers();
         lphs.displayStudents();
         lphs.displayCourses();

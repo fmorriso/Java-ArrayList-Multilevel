@@ -10,6 +10,7 @@ public class School {
     private List<Teacher> teachers = new ArrayList<Teacher>();
     private List<Student> students = new ArrayList<>();
     private List<Course> courses = new ArrayList<>();
+    private List<Department> departments = new ArrayList<>();
 
     private School() {/* prevent uninitialized instances */}
 
@@ -24,8 +25,11 @@ public class School {
     public String getAbbreviation() {return abbreviation;}
     public String getStreet() {return street;}
     public String getCity() {return city;}
+    //
     public List<Teacher> getTeachers() { return teachers;}
     public List<Student> getStudents() { return students;}
+    public List<Course> getCourses() { return courses;}
+    public List<Department> getDepartments() { return departments;}
 
     @Override
     public String toString() {
@@ -42,6 +46,7 @@ public class School {
     }
     public void addStudent(Student student) { students.add(student); }
     public void addCourse(Course course) { courses.add(course); }
+    public void addDepartment(Department department) {departments.add(department); }
 
     public void displayTeachers() {
         StringBuilder sbr = new StringBuilder();
@@ -67,5 +72,12 @@ public class School {
         System.out.println(sbr.toString());
     }
 
+    public void displayDepartments() {
+        StringBuilder sbr = new StringBuilder();
+        sbr.append(this).append("\n");
+        for (Department department : departments)
+            sbr.append("\t").append(department).append("\n");
+        System.out.println(sbr.toString());
+    }
 
 }
