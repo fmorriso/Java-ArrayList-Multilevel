@@ -3,10 +3,11 @@ An example of a multilevel arraylist using a model of:
 * A single State
 * multiple school districts (District) within that state
 * multiple schools (School) within each school district
+* multiple courses (Course) taught at each school
 * multiple departments (Department) within each school that teach multiple courses
 * multiple teachers (Teacher) at each school teaching multiple courses
 * multiple students (Student) at each school taking multiple courses
-* multiple courses (Course) taught at each school
+* A generic person class (Person) to lesson some code needed by teachers and students.
 
 NOTE: <em><b>Not every possible scenario is provided in this example.
 You are encouraged to further modify this code to suit your needs</b></em>
