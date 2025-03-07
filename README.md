@@ -23,9 +23,8 @@ Another issue left up to you is the matter of persistence.
 You may wish to look into Google's GSON as a way of transforming
 Plain Old Java Objects (POJO's) into a form that can be persisted, perhaps
 to a MongoDB Atlas cloud database with collections for each entity (Course, 
-Department, Teacher, Student, School, District and State).  
-If you want to look at an example of persisting (dehydrating) POJO's as text files in the local file system 
-and reading that text file back in (rehydrating) to a POJO's
+Department, Teacher, Student, School, District and State). If you want to look at an example of persisting (dehydrating) POJO's as text files in the local file system 
+and reading that text file back in (rehydrating) to a POJO,
 take a look at my [POJO to JSON persistence example](https://github.com/fmorriso/json-simple-example)
 
 
