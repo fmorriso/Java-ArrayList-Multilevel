@@ -7,7 +7,7 @@ An example of a multilevel arraylist using a model of:
 * multiple departments (Department) within each school that teach multiple courses
 * multiple teachers (Teacher) at each school teaching multiple courses
 * multiple students (Student) at each school taking multiple courses
-* A generic person class (Person) to lesson some code needed by teachers and students.
+* A generic person class (Person) to avoid duplicating code for both teachers and students.
 
 NOTE: <em><b>Not every possible scenario is provided in this example.
 You are encouraged to further modify this code to suit your needs</b></em>
