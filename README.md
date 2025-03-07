@@ -11,23 +11,23 @@ An example of a multilevel arraylist using a model of:
 
 NOTE: <em><b>Not every possible scenario is provided in this example.
 You are encouraged to further modify this code to suit your needs</b></em>
-<p>
+
 For example, courses can be added to both schools and departments, but you 
 may elect to have only the departments keep track of which courses they are
 in charge of.  If you decide to keep track of available courses only within departments,
 you'll need a way to pull up a unique set of courses taught by the school from all the departments
 if multiple departments can teach the same course to avoid the resulting list
 containing duplicate courses.
-</p>
-<p>
+
 Another issue left up to you is the matter of persistence.
 You may wish to look into Google's GSON as a way of transforming
 Plain Old Java Objects (POJO's) into a form that can be persisted, perhaps
 to a MongoDB Atlas cloud database with collections for each entity (Course, 
 Department, Teacher, Student, School, District and State).  
-If you want to look at an example of persisting (dehydrating) POJO's as text files in the local file system and reading that text file back in (rehydrating) to a POJO's
-take a look at my [example](https://github.com/fmorriso/json-simple-example)
-</p>
+If you want to look at an example of persisting (dehydrating) POJO's as text files in the local file system 
+and reading that text file back in (rehydrating) to a POJO's
+take a look at my [POJO to JSON persistence example](https://github.com/fmorriso/json-simple-example)
+
 
 ## Tools Used
 
@@ -44,4 +44,6 @@ take a look at my [example](https://github.com/fmorriso/json-simple-example)
 | 2025-03-06 | Initial creation |
 
 ## References
-* []()
+
+* [POJO to JSON persistence example](https://github.com/fmorriso/json-simple-example)
+
