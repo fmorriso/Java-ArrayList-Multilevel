@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class District {
     private String name;
@@ -60,6 +61,17 @@ public class District {
         System.out.println(sbr.toString());
     }
 
+    @Override
+    public boolean equals(Object o) {
+        // same memory address is easy
+        if (this == o) return true;
+        // if you're not one of us, go away.
+        if (!(o instanceof District district)) return false;
+        return Objects.equals(name, district.name) && Objects.equals(abbreviation, district.abbreviation) && Objects.equals(street, district.street) && Objects.equals(city, district.city);
+    }
 
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, abbreviation, street, city);
+    }
 }

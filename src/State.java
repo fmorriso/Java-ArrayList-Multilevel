@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class State {
 
@@ -27,5 +28,19 @@ public class State {
                 .append("name='").append(name).append('\'')
                 .append(", abbreviation='").append(abbreviation).append('\'')
                 .append('}').toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        // same memory address is easy
+        if (this == o) return true;
+        // if you're not one of us, go away.
+        if (!(o instanceof State state)) return false;
+        return Objects.equals(name, state.name) && Objects.equals(abbreviation, state.abbreviation);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, abbreviation);
     }
 }

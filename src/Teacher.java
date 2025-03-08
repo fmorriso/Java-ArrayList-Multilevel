@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Teacher extends Person {
 
@@ -21,12 +22,28 @@ public class Teacher extends Person {
     @Override
     public String toString() {
         return new StringBuilder("Teacher{")
-                .append("lastName='").append(lastName).append('\'')
+                .append("id='").append(id).append('\'')
+                .append(", lastName='").append(lastName).append('\'')
                 .append(", firstName='").append(lastName).append('\'')
                 .append('}').toString();
     }
 
     public void addCourse(Course course) {
         courses.add(course);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        // same memory address is easy
+        if (this == o) return true;
+        // if you're not one of us, go away.
+        if (!(o instanceof Teacher teacher)) return false;
+        if (!super.equals(o)) return false;
+        return Objects.equals(department, teacher.department);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), department);
     }
 }

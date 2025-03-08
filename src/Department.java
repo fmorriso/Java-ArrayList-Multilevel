@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Department {
     private String name;
@@ -24,4 +25,18 @@ public class Department {
     }
 
     public void addCourse(Course course) {courses.add(course);}
+
+    @Override
+    public boolean equals(Object o) {
+        // same memory address is easy
+        if (this == o) return true;
+        // if you're not one of us, go away.
+        if (!(o instanceof Department that)) return false;
+        return Objects.equals(name, that.name) && Objects.equals(description, that.description);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, description);
+    }
 }
