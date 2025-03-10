@@ -2,6 +2,7 @@ import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.format("Java version: %s%n", System.getProperty("java.version"));
 
         Course c1 = new Course("Java", "Java Programming");
         System.out.format("%s\n", c1);
@@ -49,5 +50,15 @@ public class Main {
         System.out.format("%s\n", colorado);
         colorado.addSchoolDistrict(lpsd);
 
+    }
+
+    /**
+     * get the java version that is running the current program
+     *
+     * @return string containing the java version running the current program
+     */
+    private static String getJavaVersion() {
+        Runtime.Version rtv = Runtime.version();
+        return String.format("%s.%s.%s.%s", rtv.feature(), rtv.interim(), rtv.update(), rtv.patch());
     }
 }
